@@ -17,7 +17,7 @@ X = iris.drop('species',axis=1)
 y = iris['species']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
 
-# SVM
+# SVC
 from sklearn.svm import SVC
 
 # Model training
@@ -35,6 +35,24 @@ predictions = model.predict(X_test)
 print(confusion_matrix(y_test,predictions))
 print(classification_report(y_test,predictions))
 
+# GridSearch
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {'C': [0.1,1, 10, 100], 'gamma': [1,0.1,0.01,0.001]}
+
+# Create a GridSearchCV object and fit it to the training data.
+grid = GridSearchCV(SVC(),param_grid,refit=True,verbose=2)
+
+grid.fit(X_train,y_train)
+
+# Model Prediction & Evaluation
+
+grid_predictions = grid.predict(X_test)
+
+#Results
+
+print(confusion_matrix(y_test,predictions))
+print(classification_report(y_test,predictions))
 
 # Decision Tree
 from sklearn.tree import DecisionTreeClassifier
