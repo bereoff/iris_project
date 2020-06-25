@@ -54,23 +54,6 @@ grid_predictions = grid.predict(X_test)
 print(confusion_matrix(y_test,predictions))
 print(classification_report(y_test,predictions))
 
-# Decision Tree
-from sklearn.tree import DecisionTreeClassifier
-
-# Model training
-dtree = DecisionTreeClassifier()
-
-dtree.fit(X_train,y_train)
-
-# Model Prediction & Evaluation
-
-dtree_pred = dtree.predict(X_test)
-
-#Results
-
-print(confusion_matrix(y_test,dtree_pred))
-print(classification_report(y_test,dtree_pred))
-
 # Random Forest
 from sklearn.ensemble import RandomForestClassifier
 
