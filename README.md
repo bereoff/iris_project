@@ -14,7 +14,7 @@ I looked at the correlation of the data to identify possible patterns. Below are
 ![alt text](https://github.com/Bereoff/iris_project/blob/master/_heatmap_.png "correlation among features")
 
 ## Model Building 
-First, I split the data into train and test sets with a test size of 30%.   
+First, I splitted the data into train and test sets with a test size of 30%.   
 
 I tried three different models and evaluated them:
 
