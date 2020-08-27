@@ -23,7 +23,7 @@ iris['species'].value_counts()
 # A perception of missing values in this data set
 
 iris.isnull().sum()
-# Don't have any missing values
+# There are no missing values
 
 # A view from the data
 
