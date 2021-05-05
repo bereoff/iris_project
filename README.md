@@ -1,6 +1,6 @@
 # Classify iris plants into three species: Project Overview
 * Created a model based on Machine Learning to predict which species is among 3 specific iris species.
-* Comparison among Machine Learning models, for an assertive results analysis.
+* Comparison among Machine Learning models, for an assertive result analysis.
 
 # Code and Resources Used 
 **Python Version:** 3.7  
